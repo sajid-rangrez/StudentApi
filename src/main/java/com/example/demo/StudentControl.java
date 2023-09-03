@@ -66,6 +66,7 @@ public class StudentControl {
 	public List<Student> getStudents() {
 		return repo.findAll();
 	}
+	//add only one element at once Some error is occuring
 	
 	@GetMapping("/searchId/{Id}")
 	public Optional<Student> getById(@PathVariable("Id") int id) { //pathVariable is assigning {Id} value to int Id
