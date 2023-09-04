@@ -20,7 +20,7 @@ public class StudentControl {
 //	@RequestMapping("/Home")
 //	public String home(){
 //		System.out.println("home called");
-//		return "home.jsp";
+//		return "home.html";
 //	}
 //	
 //	@RequestMapping("/addStudent")
@@ -28,7 +28,7 @@ public class StudentControl {
 //		System.out.println("add students called");
 //		
 //		repo.save(student); 
-//		return "home.jsp";
+//		return "home.html";
 //	}
 //	
 	@PostMapping("/students")

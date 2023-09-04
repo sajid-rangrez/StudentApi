@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bed8921c-a690-4705-b4f5-eab3ba88a858" name="Changes" comment="Auto Generated Id Enabled">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/data/pageController.java" afterDir="false" />
+    <list default="true" id="bed8921c-a690-4705-b4f5-eab3ba88a858" name="Changes" comment="Home Page Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/dao/StudentRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dao/StudentRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/data/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/data/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/StudentControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/StudentControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/data/pageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/data/pageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693819470954</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Home Page Added">
+      <created>1693821234229</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693821234229</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +152,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="ADDED Docker file" />
     <MESSAGE value="Auto Generated Id Enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auto Generated Id Enabled" />
+    <MESSAGE value="Home Page Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home Page Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
