@@ -8,19 +8,26 @@
 </head>
 <body>
 
-	<form action="addStudent">
-		<input type="text" name="name"> 
-		<br> 
-		<input type="number" name="id"> 
-		<br> 
-		<input type="text" name="tech">
-		<br>
-		<button type="submit">Submit</button>
-	</form>
-	<form action="getStudent">
-		<input type="text" name="id"> 
-		<button type="submit">Submit</button>
-	</form>
-
+	<h2>Student Api</h2>
+	<p>here you can add data - "name" & "tech" with json.</p>
+	</br>
+	<h2>features</h2>
+	<p>Here user can add, delete, and search data, here i am using H2 DataBase so the data will be deleted after sometime automatically.</p>
+	</br>
+	<h3>Add Student</h3>
+	<p>"/students" with Post method to get data</p>
+	<p>"/students"  with get method to get data</p>
+	</br>
+	<h3>Delete Student</h3>
+	<p>"/delete/{id}" with delete method to delete</p>
+	</br>
+	<h3>Search By Id</h3>
+	<p>"/searchId/{id}" with get to search</p>
+	</br>
+	<h3>Search By Name</h3>
+	<p>"/searchName/{name}" with get to search</p>
+	</br>
+	<h3>Search By Tech</h3>
+	<p>"/searchTech/{tech}" with get to search</p>
 </body>
 </html>
