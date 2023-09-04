@@ -5,14 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 import com.example.demo.dao.StudentRepo;
@@ -41,8 +34,13 @@ public class StudentControl {
 	@PostMapping("/students")
 	public String addStudents(@RequestBody List<Student> student) {
 		System.out.println("add students called");
-		repo.saveAll(student);
-		return "All students Added"; 
+		try{
+			repo.saveAll(student);
+		} catch(Exception e){
+			System.out.println("exception catched");
+			return "Something wrong check json and try again!";
+		}
+		return "All students Added";
 		 
 	}
 	
@@ -80,8 +78,14 @@ public class StudentControl {
 	}
 	
 	@GetMapping("/searchName/{name}")
-	public List<Student> getByNech(@PathVariable("name") String un) { 
+	public List<Student> getByName(@PathVariable("name") String un) {
 		return repo.findByName(un);
+	}
+
+	@DeleteMapping("delete/{id}")
+	public String deleteById(@PathVariable("id") int id) {
+		repo.deleteById(id);
+		return "object deleted";
 	}
 	
 }
